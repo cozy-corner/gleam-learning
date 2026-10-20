@@ -27,6 +27,8 @@ pub fn yen(amount: Int) -> Money(Jpy) {
   Money(amount)
 }
 
+
+// acc は雪だるまのイメージ
 pub fn total(prices: List(Money(currency))) -> Money(currency) {
   list.fold(prices, Money(0), fn(acc, x) { Money(acc.price + x.price) })
 }
