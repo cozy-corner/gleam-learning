@@ -1,4 +1,3 @@
-import gleam/int
 import gleam/list
 
 pub type Pizza {
